@@ -1,9 +1,8 @@
 
 
+cpp_srcs := $(shell find src -name *.cpp)
+
 debug :
-	@echo hello world
+	@echo $(cpp_srcs)
 
-.PHONY : clean debug
-
-clean :
-	@del /s objs
+.PHONY : debug
